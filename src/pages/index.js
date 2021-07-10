@@ -1,5 +1,6 @@
 import React from "react"
-
-export default function Home() {
-  return <div>Hello world!</div>
+import { Link } from "gatsby"
+import { Layout } from "../component/Layout"
+export default () => {
+  return <Layout>Hello world!</Layout>
 }
