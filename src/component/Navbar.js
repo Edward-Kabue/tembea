@@ -4,7 +4,7 @@ import * as styles from "../css/navbar.module.css"
 import { FaAlignRight } from "react-icons/fa"
 import links from "../constants/Links"
 import socialIcons from "../constants/social-icons"
-import * as Logo from "../images/logo.svg"
+import Logo from "../images/logo.svg"
 export const Navbar = () => {
   const [IsOpen, setNav] = useState(false)
   const toggleNav = () => {
