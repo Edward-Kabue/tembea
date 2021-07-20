@@ -5,6 +5,23 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [`gatsby-plugin-styled-components`],
+  siteMetadata: {
+    title: "Tembea",
+    description: "Tembea kenya watu wakujue vilivyo",
+    author: "baricho",
+    data: {
+      name: "john",
+      age: "24",
+    },
+  },
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    `gatsby-plugin-styled-components`,
+  ],
 }
